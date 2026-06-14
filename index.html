@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Wisata Hilisimaetano - Nias Selatan</title>
+    <style>
+        /* Desain Dasar (CSS) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 
+           DI SINI TEMPATNYA! 
+           Kode di bawah ini mengatur gambar background khusus untuk bagian tulisan Desa Budaya Nias Selatan
+        */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('omo hada.jpg') no-repeat center center/cover;
+            background-attachment: fixed; /* Membuat background tetap tenang saat di-scroll (opsional) */
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        nav {
+            background-color: #1a1a1a;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ff9800;
+            color: black;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #1a1a1a;
+            border-bottom: 3px solid #ff9800;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Desain Galeri Foto */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            background: #f1f1f1;
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-item .desc {
+            padding: 15px;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        /* Desain Peta */
+        .map-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsif untuk HP Layar Kecil */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            nav a { padding: 10px 12px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Banner Utama -->
+    <header>
+        <h1>Desa Hilisimaetanõ</h1>
+        <p>Desa Budaya Warisan Leluhur di Nias Selatan</p>
+    </header>
+    <!-- Menu Navigasi -->
+    <nav>
+        <a href="#sejarah">Sejarah</a>
+        <a href="#dayatarik">Daya Tarik</a>
+        <a href="#galeri">Galeri Budaya</a>
+        <a href="#lokasi">Lokasi</a>
+    </nav>
+
+    <!-- Konten Utama -->
+    <div class="container">
+
+        <!-- Banner Info Berhasil -->
+        <section id="sejarah">
+            <h2>Sejarah Desa</h2>
+            <p><strong>Desa Hilisimaetanõ</strong> merupakan salah satu desa adat tertua di kawasan Maniamõlõ, Kabupaten Nias Selatan, Sumatera Utara. Desa ini telah berdiri sejak berabad-abad lalu dan sukses mempertahankan keaslian tatanan adat serta arsitektur megalitikumnya hingga hari ini.</p>
+            <br>
+            <p>Nama Hilisimaetanõ sendiri memiliki arti perbukitan yang teguh atau tanah yang menetap. Secara historis, desa ini dikenal sebagai perkampungan para kesatria yang tangguh, di mana tradisi peperangan zaman dahulu melahirkan budaya lompat batu (Hombo Batu) dan tarian perang yang legendaris.</p>
+        </section>
+
+        <section id="dayatarik">
+            <h2>Apa yang Terkenal di Sini?</h2>
+            <p>Hilisimaetanõ merupakan desa wisata terkenal dengan budaya yang mendunia:</p>
+            <br>
+            <ul>
+                <li><strong>Omo Hada:</strong> Rumah adat tradisional Nias berbentuk panggung dengan struktur kayu tanpa paku yang tahan gempa.</li>
+                <li><strong>Fahombo (Lompat Batu):</strong> Tradisi menguji kedewasaan pemuda desa dengan melompati tumpukan batu setinggi 2 meter.</li>
+                <li><strong>Famatö Harimao (Famadaya Harimao):</strong> Famatö Harimao adalah upacara yang dilakukan oleh orang Maenamölö di Nias Selatan dengan media patung harimau. Upacara ini biasa dilaksanakan saat pembaruan hukum adat fondrakö setiap tujuh tahun sekali. Famatö dalam bahasa Nias berarti pematahan. Hal ini berhubungan dengan pematahan patung setelah diarak. Meski namanya harimau, patung yang diarak tidak mirip harimau tetapi kombinasi badan anjing dengan kepala kucing dengan taring mencuat. Dalam upacara ini terdapat sejumlah patung harimau yang akan diarak hingga ke tepi jurang tempat patung itu dipatahkan lalu dibuang ke sungai. Patahan-patahan patung harimau yang hanyut oleh arus Sungai Gomo diyakini akan menghapus dosa yang telah dilakukan selama tahun-tahun sebelumnya. Saat ini, upacara Famatö Harimao dimodifikasi menjadi Famadaya Harimao (perarakan patung harimau), disesuaikan dengan nilai-nilai keagamaan yang dianut masyarakat Nias saat ini, diselenggarakan sebagai usaha melestarikan dan revitalisasi budaya Nias pada acara tertentu.</li>
+            </ul>
+        </section>
+
+        <section id="galeri">
+            <h2>Galeri Kebudayaan & Visual</h2>
+            <p>Berikut adalah visualisasi kekayaan adat yang ada di Desa Hilisimaetanõ:</p>
+            
+            <div class="gallery">
+                <!-- Item 1: Rumah Adat -->
+                <div class="gallery-item">
+                    <!-- Catatan: Ganti URL gambar di bawah ini dengan foto pakaian adat asli jika sudah punya -->
+                    <img src="omo hada.jpg" alt="Rumah Adat Nias">
+                    <div class="desc">
+                        <strong>Omo Hada</strong><br>
+                   </div>
+                </div>
+
+                <!-- Item 2:Famatö Harimao -->
+                <div class="gallery-item">
+                    <img src="famadaya harimao.jpg" alt="Famatö Harimao">
+                    <div class="desc">
+                        <strong>Arsitektur Omo Hada</strong><br>
+                    </div>
+                </div>
+
+                <!-- Item 3: Lompat Batu -->
+                <div class="gallery-item">
+                    <img src="fahombo.jpg" alt="Fahombo Batu">  
+                    <div class="desc">
+                        <strong>Fahombo Batu</strong><br>
+                         </div>
+                </div>
+                                                                                                                                  <!-- Item 4: Pakaian Adat -->
+                <div class="gallery-item">
+                    <img src="pakaian adat.jpg" alt="Pakaian Adat">
+                    <div class="desc">
+                        <strong>Pakaian Adat</strong><br>                
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                  <section id="lokasi">
+        <h2>Lokasi Google Maps</h2>
+        <p style="margin-bottom: 15px;">Desa Hilisimaetanõ terletak di Kecamatan Maniamõlõ, Kabupaten Nias Selatan, Provinsi Sumatera Utara. Anda bisa mengikuti rute peta di bawah ini untuk berkunjung:</p>
+        
+        <!-- Embed Google Maps Resmi Desa Adat & Wisata Hilisimaetanö -->
+        <div class="map-container">
+            <iframe src="https://google.com" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Desa Wisata Hilisimaetanõ. Dibuat untuk melestarikan budaya Nias.</p>
+    </footer>
+
+</body>
+</html>
